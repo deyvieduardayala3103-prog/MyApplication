@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F6FB">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- CABECERA -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:padding="24dp"
+            android:background="#4527A0">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CONTROL DE ASISTENCIA"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Instituto Técnico"
+                android:textColor="#E8E0FF"
+                android:textSize="17sp"/>
+
+        </LinearLayout>
+
+
+        <!-- DATOS DEL ESTUDIANTE -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="vertical"
+            android:padding="18dp"
+            android:background="#FFFFFF">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DATOS DEL ESTUDIANTE"
+                android:textColor="#4527A0"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Nombre del estudiante"
+                android:textColor="#4527A0"
+                android:textSize="15sp"/>
+
+            <EditText
+                android:id="@+id/txtNombre"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:hint="Ingrese nombre completo"
+                android:inputType="textCapWords"
+                android:padding="12dp"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Curso"
+                android:textColor="#4527A0"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:gravity="center_vertical"
+                android:padding="12dp"
+                android:text="DESARROLLO DE APLICACIONES"
+                android:textColor="#333333"
+                android:textSize="15sp"
+                android:background="#F0EEF7"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Edad"
+                android:textColor="#4527A0"
+                android:textSize="15sp"/>
+
+            <EditText
+                android:id="@+id/txtEdad"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:hint="Ingrese edad"
+                android:inputType="number"
+                android:padding="12dp"
+                android:textSize="16sp"/>
+
+            <Button
+                android:id="@+id/btnVerificar"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="18dp"
+                android:backgroundTint="#5E35B1"
+                android:text="VERIFICAR EDAD"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+
+        <!-- RESULTADO -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:padding="18dp"
+            android:orientation="vertical"
+            android:background="#F0EDFF">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RESULTADO DE VERIFICACIÓN"
+                android:textColor="#4527A0"
+                android:textSize="19sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txtResultado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Ingrese los datos y presione verificar"
+                android:textColor="#333333"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+
+        <!-- ASISTENCIA -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:padding="18dp"
+            android:orientation="vertical"
+            android:background="#FFFFFF">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CONTROL DE ASISTENCIA"
+                android:textColor="#4527A0"
+                android:textSize="19sp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btnRegistrar"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="18dp"
+                android:backgroundTint="#5E35B1"
+                android:text="REGISTRAR ASISTENCIA"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txtAsistencia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:padding="18dp"
+                android:text="La asistencia todavía no ha sido registrada."
+                android:textColor="#287A37"
+                android:textSize="15sp"
+                android:background="#E8F5E9"/>
+
+        </LinearLayout>
+
+
+        <!-- RESUMEN -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="25dp"
+            android:padding="18dp"
+            android:orientation="vertical"
+            android:background="#FFFFFF">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RESUMEN"
+                android:textColor="#4527A0"
+                android:textSize="19sp"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="90dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="12&#10;Asistencias"
+                    android:textColor="#287A37"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:background="#E8F5E9"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="90dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:gravity="center"
+                    android:text="1&#10;Falta"
+                    android:textColor="#C47A00"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:background="#FFF3CD"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="90dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:gravity="center"
+                    android:text="92%&#10;Asistencia"
+                    android:textColor="#3156A8"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:background="#EAF1FF"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
